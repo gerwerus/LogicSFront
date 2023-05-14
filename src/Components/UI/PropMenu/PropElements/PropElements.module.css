@@ -1,0 +1,10 @@
+.menuDropdown{
+    width: 100%;
+    display: none;
+    padding: 0px 0px 2%;
+    
+}
+
+.menuDropdownActive{
+    display: block;
+}

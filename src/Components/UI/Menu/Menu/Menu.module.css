@@ -1,0 +1,17 @@
+.menu{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 100px;
+    border-radius: 15px;
+    border: 10px solid black;
+    color: black;
+    background-color: rgb(226, 173, 173);
+    z-index: 999;
+    width: 400px;
+    
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}

@@ -1,0 +1,128 @@
+.myHdr {
+    position: sticky;
+    top: 0;
+    padding: 1%;
+    background-color: rgb(62, 45, 45);
+    color: white;
+    align-items: center;
+    display: inline-block;
+    width: 100vw;
+}
+.myHdrBtn{
+    margin-left: 5px;
+
+    background-color: rgba(255, 255, 255, 0);
+    border: 1mm ridge rgba(144, 43, 36, 0.244);
+    text-decoration: none;
+    color: #ffffff; 
+    font-family: sans-serif;
+}
+.myHdrBtn:hover{
+    text-decoration: underline;
+    
+}
+
+.savePopup{
+    background-color: rgba(144, 43, 36, 0.62);
+    color: #ffffff;
+    background-color: rgb(237, 141, 141);
+    border-radius: 15px;
+    border: 5px solid black;
+    padding: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    margin: 0 0 1% 0; 
+    /* background-image: linear-gradient(to right, #ff7382, #a88181); */
+    border-radius: 10px;
+    background-origin: border-box;
+    font-weight: bold;
+    animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
+}
+.inputFile {
+    padding:5px;
+    border:0;
+}
+.popupBtn{
+    width: 100%;
+    margin: 0 0 1% 0; 
+    border: 1px solid;
+    background-image: linear-gradient(to right, #ff7382, #a88181);
+    border-radius: 5px;
+    background-origin: border-box;
+    font-weight: bold;
+}
+.popupBtn:active{
+    border-radius: 10px;
+}
+
+table,
+td {
+    border: 1px solid #333;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
+
+@keyframes anvil {
+    0% {
+        transform: scale(1) translateY(0px);
+        opacity: 0;
+        box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+    }
+    1% {
+        transform: scale(0.96) translateY(10px);
+        opacity: 0;
+        box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+    }
+    100% {
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+        box-shadow: 0 0 500px rgba(241, 241, 241, 0);
+    }
+}
+
+.menu {
+    display: inline-block;
+    position: relative; 
+  }
+.menuItem {
+    background-color: #a88181;
+    cursor: pointer;
+    padding: 5px;
+    height: 28px;
+    border: 1px solid rgb(187, 187, 187);
+}
+.menuItem:hover {
+    color: #2980b9;
+}
+
+.TestPopupElement{
+    background-color: #a88181;
+    cursor: pointer;
+    padding: 5px;
+    height: 20px;
+    margin-bottom: 1px;
+    border: 1px solid rgba(138, 81, 81, 0.474);
+}
+.TestPopupElement:hover{
+    color: rgb(78, 51, 51);
+    border-radius: 5px;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+
+::-webkit-scrollbar {
+    display: none;
+}

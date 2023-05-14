@@ -1,0 +1,13 @@
+.MenuDropdownElement{
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    display: inline-block;
+    font-size: 1.5em;
+    width: 100%;
+    border: 0px solid rgba(255, 255, 255, 0);
+    border-radius: 10px;
+}
+.MenuDropdownElement:hover{
+    background-color: rgba(255, 255, 255, 0.37);
+    
+}

@@ -1,0 +1,12 @@
+.myHdrBtn{
+    margin-left: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1mm ridge rgba(144, 43, 36, 0.244);
+    text-decoration: none;
+    color: #ffffff; 
+    font-family: sans-serif;
+}
+.myHdrBtn:hover{
+    text-decoration: underline;
+    
+}

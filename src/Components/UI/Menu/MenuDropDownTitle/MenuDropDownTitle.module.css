@@ -1,0 +1,11 @@
+.miniBtn{
+    height: 10%;
+    background-color: rgba(255, 255, 255, 1);
+    border: 0px;
+    border-radius: 3px;
+    margin: auto;
+    
+}
+.miniBtn:hover{
+    background-color: rgba(0, 255, 255, 0.5);
+}
