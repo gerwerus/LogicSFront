@@ -71,6 +71,7 @@ function App() {
 
   const removeComponent = (id) => {
     const se = simElements ? simElements.filter((x) => x.id !== id) : [];
+    if(!simElements.find(x => x.id === id)) return
     if(simElements.find(x => x.id === id).prop.type === 'Input' || simElements.find(x => x.id === id).prop.type === 'Output'){
       setTesting({isTest: false, answer: [], id: 0})
     }

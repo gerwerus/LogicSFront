@@ -19,17 +19,32 @@ const SimRect = ({Rx = 0, Ry = 0, Rw = 100, Rh = 100, Tfz = 40, text, focusEleme
             stroke={focusElement ? 'green' : (props.type === 'Output' ? 'pink' : 'gray') }
             strokeWidth={5}
         />
-        <Text 
-              x={Rx + 0.4 * Rw/( Math.ceil(props.bitWidth / 3) === 0 ? 1 : Math.ceil(props.bitWidth / 1.5))}
+        {
+          props.type === 'Output' || props.type === 'Input' ?
+            <Text 
+                x={Rx + 0.4 * Rw/( Math.ceil(props.bitWidth / 3) === 0 ? 1 : Math.ceil(props.bitWidth / 1.5))}
+                y={Ry + 0.35 * Rh}
+                fontSize={Tfz/( Math.ceil(props.bitWidth / 3) === 0 ? 1 : Math.ceil(props.bitWidth / 4))}
+                text={(props.type === 'Output' || props.type === 'Input') ? 
+                  '0'.repeat(props.bitWidth - Number(props.value).toString(2).length > 0 && props.value >= 0 ? props.bitWidth - Number(props.value).toString(2).length : 0) + Number(props.value).toString(2) 
+                  : 
+                  text
+                }
+                align= {'center'}
+            /> 
+          :
+            <Text 
+              x={Rx + 40}
               y={Ry + 0.35 * Rh}
-              fontSize={Tfz/( Math.ceil(props.bitWidth / 3) === 0 ? 1 : Math.ceil(props.bitWidth / 4))}
+              fontSize={Tfz}
               text={(props.type === 'Output' || props.type === 'Input') ? 
                 '0'.repeat(props.bitWidth - Number(props.value).toString(2).length > 0 && props.value >= 0 ? props.bitWidth - Number(props.value).toString(2).length : 0) + Number(props.value).toString(2) 
                 : 
                 text
               }
               align= {'center'}
-        /> 
+            />
+        }
         { (props.type === 'Not' || props.type === 'Nand' || props.type === 'Nor' || props.type === 'Not' || props.type === 'Xnor') ? 
         <Circle
             x={Rw}

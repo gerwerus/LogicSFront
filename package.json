@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "add": "^2.0.6",
     "axios": "^1.4.0",
+    "canvas": "^2.11.2",
     "export-from-json": "^1.7.2",
     "konva": "^9.0.0",
     "or": "^0.2.0",
@@ -34,16 +35,20 @@
       "react-app/jest"
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "browserslist": [
+    "last 4 versions"
+  ],
+  "development": [
+    "last 1 chrome version",
+    "last 1 firefox version",
+    "last 1 safari version"
+  ],
+  "jest": {
+    "moduleNameMapper": {
+      "axios": "axios/dist/node/axios.cjs"
+    }
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
   }
 }

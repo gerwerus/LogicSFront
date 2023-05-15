@@ -34,7 +34,7 @@ function AutoPopup(props) {
             <h3 style={{textAlign: 'center', width: '100%'}}>Авторизация</h3> 
             <input name="username" placeholder="Логин" className={classes.popupBtn} style={{width:'97%'}}/>
             <br></br>
-            <input name='password' placeholder="Пароль" className={classes.popupBtn} style={{width:'97%'}}/>  
+            <input name='password' type="password" placeholder="Пароль" className={classes.popupBtn} style={{width:'97%'}}/>  
             <br></br>
             <input type="submit" className={classes.popupBtn}></input>
         </form>

@@ -19,6 +19,7 @@ import Dc from '../Plexors/Dc';
 
 const SimElement = ({Rx = 0, Ry = 0, Rw = 100, Rh = 100, Tfz = 40, setFocusElement, prop, mutableProp, WIDTH, HEIGHT, ...props}) => {  
   const basicElements = ['Input', 'Output', 'And', 'Or', 'Xor', 'Nand', 'Nor', 'Xnor', 'Not']
+  if(!prop) return null;
   if(basicElements.indexOf(prop.type) !== -1) {
     return (
       <Group
