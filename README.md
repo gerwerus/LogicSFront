@@ -15,4 +15,5 @@ npm i
 npm run start
 ```
 ## Стек:
-+ JS + React
++ JS
++ React
